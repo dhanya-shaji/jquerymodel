@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jequery model example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <!--ladda button-->
+    <link rel="stylesheet" href="dist/ladda-themeless.min.css">
+    <script src="dist/spin.min.js"></script>
+    <script src="dist/ladda.min.js"></script>
+</head>
+<body>
+    <div id="ex1" class="modal">
+        <div class="container">
+            <div class="row">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button class="btn btn-primary ladda-button" type="button"  id="btn" data-style="expand-left"><span class="ladda-label">lOG IN</span></button>
+                    <a href="#" rel="modal:close">Close</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to open the modal -->
+    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+</body>
+
+</html>
